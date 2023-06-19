@@ -63,7 +63,7 @@ export default function MyNavbar() {
               className="logo1"
               src="/images/logo-white.png"
               alt="bug"
-              height={65}
+              height={90}
             />
             <h1 style={{ marginLeft: '30px' }}> &lt;lukas&gt; </h1>
           </Link>

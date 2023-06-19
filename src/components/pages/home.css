@@ -38,14 +38,15 @@
   display: flex;
   position: relative;
   flex: 1;
-  top: 100vh;
-  height: 100vh;
+  top: 200vh;
+
   width: 100vw;
   left: 0;
   right: 0;
   z-index: -11;
   align-items: center;
   justify-content: center;
+  border: 5px solid rgb(255, 253, 253);
   background: rgb(238, 9, 229);
   background: linear-gradient(
     90deg,
