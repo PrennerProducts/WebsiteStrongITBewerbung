@@ -1,0 +1,12 @@
+.downloadcontainer {
+  background: url('/public/images/cool.jpg') center center/cover repeat;
+  background-position: center center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding-top: 0%;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  height: 100vh;
+}

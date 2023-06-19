@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Jolly+Lodger&family=Rowdies&family=Rubik+Dirt&display=swap');
+
+.hero-ueberContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+video {
+  object-fit: fill;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+.hero-container {
+  /* background:url('/public/images/background2.jpg') 
+    center center/cover no-repeat;  */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-container > h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: 0px;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.begruessungsDiv {
+  margin: 10px;
+}
+
+.herologo {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    /* background:url('/public/images/background2.jpg') 
+        center center/cover no-repeat;  */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .hero-container > h1 {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .herologo {
+    width: 90%;
+    display: center;
+    position: relative;
+    top: 0;
+    left: 3%;
+  }
+  .typeAnimation {
+    display: none;
+  }
+  .video {
+    object-fit: fill;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+  }
+  .zeitenheader {
+    position: absolute;
+    top: -20px;
+    font-size: '38px';
+    font-weight: 'bold';
+  }
+}

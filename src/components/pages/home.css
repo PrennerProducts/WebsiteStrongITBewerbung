@@ -1,0 +1,144 @@
+.home-container {
+  display: flex;
+  position: relative;
+  top: 0;
+  flex-direction: column;
+  height: 490vh;
+  width: 100vw;
+}
+
+.hero-container {
+  display: flex;
+  flex: 1;
+  z-index: 2;
+}
+
+.about-container {
+  display: flex;
+  position: relative;
+  flex: 2;
+  top: 100vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  z-index: -21;
+  align-items: center;
+  justify-content: center;
+  background: rgb(238, 9, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 9, 229, 1) 0%,
+    rgba(139, 9, 238, 1) 48%,
+    rgba(6, 181, 242, 0.9332107843137255) 92%
+  );
+}
+
+.download-container {
+  display: flex;
+  position: relative;
+  flex: 1;
+  top: 100vh;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  z-index: -11;
+  align-items: center;
+  justify-content: center;
+  background: rgb(238, 9, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 9, 229, 1) 0%,
+    rgba(139, 9, 238, 1) 48%,
+    rgba(6, 181, 242, 0.9332107843137255) 92%
+  );
+}
+
+.contact-container {
+  display: flex;
+  position: relative;
+  flex: 1;
+  top: 100vh;
+  padding-top: 100vh;
+  margin-top: 100vh;
+  height: 100vh;
+  width: 100vw;
+  left: -10px;
+  z-index: 111;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallerie-container {
+  display: flex;
+  position: relative;
+  flex: 1;
+  top: 220vh;
+  padding-top: 220vh;
+  height: 100vh;
+  width: 100vw;
+  left: -10px;
+  z-index: 11;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .home-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    height: 1000vh;
+    width: 100%;
+  }
+
+  .hero-container {
+    display: flex;
+    flex: 1;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .about-container {
+    display: flex;
+    position: relative;
+    flex: 4;
+    top: 100vh;
+    height: 800vh;
+    padding-top: 100vh;
+    width: 100%;
+    left: 3px;
+    z-index: 11;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-container {
+    display: flex;
+    position: relative;
+    flex: 1.8;
+    top: 100vh;
+    padding-top: 200vh;
+    height: 100vh;
+    width: 100vw;
+    left: 3px;
+    z-index: 111;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallerie-container {
+    display: flex;
+    position: relative;
+    flex: 1;
+    top: 100vh;
+    padding-top: 200vh;
+    height: 100vh;
+    width: 100vw;
+    left: 3px;
+    z-index: 11;
+    align-items: center;
+    justify-content: center;
+  }
+}
