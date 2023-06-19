@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../../App.css';
 import HeroSection from '../HeroSection';
-import UeberMich from '../pages/UeberMich';
+import WhoAmI from '../pages/WhoAmi';
 import Downlaods from '../pages/Downloads';
-
 import './home.css';
-
-// import Contact from './Contact';
-// import Gallerie from './Gallerie';
-// import UeberMich from './UeberMich';
 
 function Home() {
   const componentDidMount = () => {
@@ -23,7 +18,7 @@ function Home() {
           <HeroSection />
         </div>
         <div className="about-container">
-          <UeberMich />
+          <WhoAmI />
         </div>
         <div className="download-container">
           <Downlaods />

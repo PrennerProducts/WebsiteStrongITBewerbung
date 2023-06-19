@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../App.css';
 import HeroSection from '../HeroSection';
-import UeberMich from '../pages/UeberMich';
+import WhoAmI from '../pages/WhoAmi';
 
 import './Downloads.css';
 

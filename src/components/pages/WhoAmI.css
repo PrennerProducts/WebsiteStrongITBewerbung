@@ -56,7 +56,8 @@
 .studicards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10%;
+  margin-top: 8%;
+  margin-bottom: 0;
 }
 .img {
   width: 100%;
@@ -80,10 +81,23 @@
   top: 180px;
   right: 25%;
 }
+.titel3 {
+  font-size: 5rem;
+  font-family: 'Rowdies', cursive;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
 .titel h1 {
   margin: 20px 0px;
   font-size: 1rem;
   color: #ffffff;
+}
+
+.goalscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8%;
+  margin-bottom: 0;
 }
 
 .sub {

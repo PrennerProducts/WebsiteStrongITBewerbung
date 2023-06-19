@@ -11,6 +11,7 @@ export default function MyNavbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [dropdown, setDropdown] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenue = () => setClick(false);
@@ -20,6 +21,14 @@ export default function MyNavbar() {
       setButton(false);
     } else {
       setButton(true);
+    }
+  };
+
+  const changeNavBackground = () => {
+    if (window.scrollY > 1000) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
     }
   };
 
@@ -37,13 +46,17 @@ export default function MyNavbar() {
 
   useEffect(() => {
     showButton();
+    window.addEventListener('resize', showButton);
+    window.addEventListener('scroll', changeNavBackground);
+    return () => {
+      window.removeEventListener('resize', showButton);
+      window.removeEventListener('scroll', changeNavBackground);
+    };
   }, []);
-
-  window.addEventListener('resize', showButton);
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={scrollNav ? 'navbar active' : 'navbar'}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenue}>
             <img
@@ -65,7 +78,7 @@ export default function MyNavbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/uebermich"
+                to="/whoami"
                 className="nav-links"
                 onClick={closeMobileMenue}
               >

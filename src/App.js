@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom';
 
 import MyNavbar from './components/Navbar';
 import Home from './components/pages/Home';
-import UeberMich from './components/pages/UeberMich';
+import WhoAmI from './components/pages/WhoAmi';
 // import Gallerie from './components/pages/Gallerie.js';
 // import Contact from './components/pages/Contact.js';
 // import Footer from './components/pages/Footer.js';
@@ -11,7 +11,6 @@ import UeberMich from './components/pages/UeberMich';
 // import ErrorPage from './error-page.js';
 import HeroSection from './components/HeroSection';
 import { Navbar } from 'react-bootstrap';
-
 import './index.css';
 import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
 import Downlaods from './components/pages/Downloads';
@@ -57,7 +56,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="uebermich" element={<UeberMich />} />
+                <Route path="whoami" element={<WhoAmI />} />
                 <Route path="downloads" element={<Downlaods />} />
                 {/* <Route path="contact" element={<Contact />} />
               <Route path="impressum" element={<Impressum />} /> */}

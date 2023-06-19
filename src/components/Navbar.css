@@ -12,9 +12,17 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: fixed !important;
+  position: fixed;
   top: 15px;
   z-index: 999;
+}
+.navbar.active {
+  /* CSS styles for the Navbar when scrolled */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  background-color: #0000001e; /* Customize the background color as desired */
+  transition: background-color 0.3s ease;
 }
 
 .navbar-container {
@@ -27,12 +35,12 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: rgb(255, 255, 255);
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 40px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
 }
@@ -48,9 +56,9 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 70vw;
   justify-content: end;
-  margin-right: 2rem;
+  margin-right: 0px;
 }
 
 .nav-item {
@@ -66,22 +74,17 @@
   height: 30px;
   align-items: center;
   justify-content: center;
-  /* font-family: 'Grechen Fuemen', cursive;  */
-  /* font-family: 'Rubik Dirt', cursive; */
-  /* font-family: 'Grechen Fuemen', cursive;
-font-family: 'Jolly Lodger', cursive; */
   font-family: 'Rowdies', cursive, Arial, sans-serif;
-
-  /* font-family: 'Rubik Dirt', cursive; */
-
   font-size: 30px;
   width: 150px;
   /* border: 1px solid #fff; */
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid rgba(6, 181, 242, 0.9332107843137255);
   transition: all 0.2s ease-out;
+  color: rgba(238, 9, 229, 1);
+  /* color: rgba(139, 9, 238, 1); */
 }
 
 .fa-bars {
@@ -208,7 +211,7 @@ font-family: 'Jolly Lodger', cursive; */
   .nav-menu {
     display: flex;
     flex-direction: column;
-    left: -200%;
+    left: -2000%;
     height: 100vh;
     position: absolute;
     top: 80px;
