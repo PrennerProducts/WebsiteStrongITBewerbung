@@ -65,7 +65,7 @@ export default function MyNavbar() {
               alt="bug"
               height={90}
             />
-            <h1 style={{ marginLeft: '30px' }}> &lt;lukas&gt; </h1>
+            <h1 style={{ marginLeft: '30px' }}> &lt;lukasPrenner&gt; </h1>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
@@ -100,22 +100,28 @@ export default function MyNavbar() {
               {dropdown && (
                 <ul>
                   <li>
-                    <Link to="/file1">Bewerbung PDF</Link>
+                    <Link to="/file1">Application PDF</Link>
                   </li>
                   <li>
-                    <Link to="/file2">Lebenslauf PDF</Link>
+                    <Link to="/file2">CV PDF</Link>
                   </li>
                 </ul>
               )}
             </li>
+
             <li className="nav-item">
-              <Link
-                to="/contact"
+              <a
+                href="https://github.com/PrennerProducts"
                 className="nav-links"
-                onClick={closeMobileMenue}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Kontakt
-              </Link>
+                <img
+                  src="/images/github.png"
+                  alt="Github Logo"
+                  className="github-logo"
+                />
+              </a>
             </li>
           </ul>
         </div>

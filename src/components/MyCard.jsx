@@ -36,9 +36,6 @@ const MyCard = ({ imageSrc, title, description, listItems }) => {
           ))}
         </ul>
       </div>
-      <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-        <button>Learn More</button>
-      </div>
     </div>
   );
 };
