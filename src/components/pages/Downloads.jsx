@@ -23,7 +23,7 @@ function Downlaods() {
           />
         </a>
 
-        <a href="/documents/bewerbung.pdf" target="_blank">
+        <a href="/documents/lebenslauf.pdf" target="_blank">
           <MyCard
             imageSrc="/images/logo-color.png"
             title="Open Application"

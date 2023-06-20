@@ -100,10 +100,10 @@ export default function MyNavbar() {
               {dropdown && (
                 <ul>
                   <li>
-                    <Link to="/file1">Application PDF</Link>
+                    <Link to="/dokuments/bewerbung.pdf">Application PDF</Link>
                   </li>
                   <li>
-                    <Link to="/file2">CV PDF</Link>
+                    <Link to="/documents/lebenslauf.pdf">CV PDF</Link>
                   </li>
                 </ul>
               )}

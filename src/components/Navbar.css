@@ -136,6 +136,7 @@
 }
 
 .nav-item:hover .github-logo {
+  border-radius: 50%;
   color: #eb05dc;
 }
 .github-logo:hover {
@@ -161,6 +162,18 @@
 .nav-item:hover .dropdown-menu {
   display: flex;
 }
+
+h1 {
+  font-family: 'Rowdies', cursive, Arial, sans-serif;
+  font-weight: 100;
+
+  color: #15d6eb;
+}
+
+h1:hover {
+  color: #eb05dc;
+}
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: realative;
