@@ -100,7 +100,7 @@
 }
 .nav-item ul {
   position: absolute;
-  top: calc(100% -50px); /* Anpassung um 50 Pixel nach oben */
+  top: calc(100% 0px); /* Anpassung um 50 Pixel nach oben */
   left: 0;
   display: none;
   flex-direction: column;

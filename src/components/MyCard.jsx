@@ -14,6 +14,7 @@ const MyCard = ({ imageSrc, title, description, listItems }) => {
         backgroundColor: 'rgba(255, 255, 255, 0.3)',
         elevation: '10',
         fontFamily: 'Rowdies',
+        color: 'white',
       }}
     >
       <img
