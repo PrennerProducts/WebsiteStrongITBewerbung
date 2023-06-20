@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom';
-
 import MyNavbar from './components/Navbar';
 import Home from './components/pages/Home';
 import WhoAmI from './components/pages/WhoAmi';
-// import Gallerie from './components/pages/Gallerie.js';
-// import Contact from './components/pages/Contact.js';
-// import Footer from './components/pages/Footer.js';
-// import Impressum from './components/pages/impressum.js';
-// import ErrorPage from './error-page.js';
-import HeroSection from './components/HeroSection';
-import { Navbar } from 'react-bootstrap';
 import './index.css';
 import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
 import Downlaods from './components/pages/Downloads';

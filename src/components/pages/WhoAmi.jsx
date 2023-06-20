@@ -41,7 +41,7 @@ function WhoAmI() {
           development I, particularly fascinating."
           listItems={[
             'eCollaboration',
-            'Wisenschaftliches Arbeiten',
+            'Wissenschaftliches Arbeiten',
             'Programmiertechnik (Python)',
             'Systemplanung',
             'Logik & Berechenbarkeit',

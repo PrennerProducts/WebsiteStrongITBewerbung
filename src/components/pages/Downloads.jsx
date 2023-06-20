@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
-import WhoAmI from '../pages/WhoAmi';
 import MyCard from '../MyCard';
 import './Downloads.css';
+import AsciiBus from '../AsciiBus';
 
 // import Contact from './Contact';
 // import Gallerie from './Gallerie';
@@ -31,6 +30,9 @@ function Downlaods() {
             listItems={[]}
           />
         </a>
+      </div>
+      <div className="bus">
+        <AsciiBus />
       </div>
       <div className="goalscontainer">
         <p className="goalsfooter">

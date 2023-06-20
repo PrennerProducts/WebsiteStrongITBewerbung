@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
-import { Button } from './Button';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { GiRocketThruster } from 'react-icons/gi';
-import { IconContext } from 'react-icons/lib';
 import './Navbar.css';
 
 export default function MyNavbar() {
@@ -100,10 +96,14 @@ export default function MyNavbar() {
               {dropdown && (
                 <ul>
                   <li>
-                    <Link to="/dokuments/bewerbung.pdf">Application PDF</Link>
+                    <Link to="/documents/bewerbung.pdf" target="_blank">
+                      Application PDF
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/documents/lebenslauf.pdf">CV PDF</Link>
+                    <Link to="/documents/lebenslauf.pdf" target="_blank">
+                      CV PDF
+                    </Link>
                   </li>
                 </ul>
               )}

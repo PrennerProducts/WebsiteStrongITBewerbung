@@ -57,6 +57,13 @@
   color: white;
 }
 
+.bus {
+  color: white;
+  position: absolute;
+  bottom: 25%;
+  left: 30%;
+}
+
 @media screen and (max-width: 480px) {
   .downloadcontainer {
     background: rgb(238, 9, 229);
@@ -111,5 +118,8 @@
     font-size: 20px;
     font-family: 'Rowdies', Arial, sans-serif;
     color: white;
+  }
+  .bus {
+    display: none;
   }
 }

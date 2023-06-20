@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import './HeroSection.css';
 import { TypeAnimation } from 'react-type-animation';
-import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -42,7 +41,7 @@ function HeroSection() {
         />
       </div>
 
-      <video src="/videos/tunnel.mp4" type="video/mp4" autoPlay muted loop />
+      <video src="/videos/tunnel3.mp4" type="video/mp4" autoPlay muted loop />
       {/* <video width="320" height="240" controls>
         <source src="../../public/videos/tunnel.mp4" type="video/mp4" />
         Your browser does not support the video tag.
