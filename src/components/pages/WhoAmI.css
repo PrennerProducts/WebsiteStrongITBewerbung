@@ -58,6 +58,8 @@
   flex-wrap: wrap;
   margin-top: 8%;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .img {
   width: 100%;
@@ -86,6 +88,7 @@
   font-family: 'Rowdies', cursive;
   color: rgb(255, 255, 255);
   position: relative;
+  right: 35%;
 }
 .titel h1 {
   margin: 20px 0px;

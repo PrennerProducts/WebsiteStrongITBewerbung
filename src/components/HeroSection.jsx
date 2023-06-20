@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './HeroSection.css';
 import { TypeAnimation } from 'react-type-animation';
 import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom';
@@ -16,7 +15,7 @@ function HeroSection() {
             2000, // Waits 1s
             '...get to know me...', // Types 'One'
             2000, // Waits 1s
-            '...lets hit the scroll!...', // Types 'One'
+            '...lets hit the scroll!', // Types 'One'
             2000, // Waits 1s
 
             // Waits 2s

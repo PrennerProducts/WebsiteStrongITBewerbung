@@ -1,12 +1,36 @@
 .downloadcontainer {
-  background: url('/public/images/cool.jpg') center center/cover repeat;
-  background-position: center center;
-  align-items: center;
-  color: rgb(255, 255, 255);
+  background: rgb(238, 9, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 9, 229, 1) 0%,
+    rgba(139, 9, 238, 1) 48%,
+    rgba(6, 181, 242, 0.9332107843137255) 92%
+  );
   padding-top: 0%;
   position: absolute;
   width: 100vw;
   height: 100vh;
   top: 0;
   height: 100vh;
+}
+.downloads {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.downloadimg {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.downloads a {
+  margin-right: 10%;
 }
