@@ -25,7 +25,7 @@ function Downlaods() {
         <a href="/documents/lebenslauf.pdf" target="_blank">
           <MyCard
             imageSrc="/images/logo-color.png"
-            title="Open Application"
+            title="Open CV"
             description=""
             listItems={[]}
           />
