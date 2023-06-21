@@ -78,12 +78,13 @@
   font-size: 30px;
   width: 150px;
   /* border: 1px solid #fff; */
+  color: rgba(238, 9, 229, 1);
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid rgba(6, 181, 242, 0.9332107843137255);
+  border-bottom: 4px solid rgba(238, 9, 229, 1);
   transition: all 0.2s ease-out;
-  color: rgba(238, 9, 229, 1);
+  color: rgba(6, 181, 242, 0.9332107843137255);
   /* color: rgba(139, 9, 238, 1); */
 }
 
@@ -137,11 +138,12 @@
 
 .nav-item:hover .github-logo {
   border-radius: 50%;
-  color: #eb05dc;
+  color: rgba(6, 181, 242, 0.9332107843137255);
 }
 .github-logo:hover {
-  background-color: #0aeb2cd5;
+  background-color: #e5a00ad5;
   filter: invert(1) grayscale(0%) brightness(200%);
+  scale: 0.8;
 }
 
 .dropdown-menu {
