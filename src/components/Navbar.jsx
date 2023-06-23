@@ -52,7 +52,7 @@ export default function MyNavbar() {
 
   return (
     <>
-      <nav className={scrollNav ? 'navbar active' : 'navbar'}>
+      <nav className={'navbar'}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenue}>
             <img
