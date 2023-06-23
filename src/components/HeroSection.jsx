@@ -1,9 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../App.css';
 import './HeroSection.css';
 import { TypeAnimation } from 'react-type-animation';
 
 function HeroSection() {
+  const audioRef = useRef(null);
+  const [isSoundPlaying, setIsSoundPlaying] = useState(false);
+
+  useEffect(() => {
+    const audioElement = audioRef.current;
+
+    const playSound = () => {
+      if (audioElement) {
+        audioElement.play().catch((error) => {
+          console.log('Failed to play sound:', error);
+        });
+      }
+    };
+
+    const pauseSound = () => {
+      if (audioElement) {
+        audioElement.pause();
+      }
+    };
+
+    if (isSoundPlaying) {
+      playSound();
+    } else {
+      pauseSound();
+    }
+  }, [isSoundPlaying]);
+
+  const handleToggleSound = () => {
+    setIsSoundPlaying((prevState) => !prevState);
+  };
+
   return (
     <div className="hero-container">
       <div className="begruessungsDiv">
@@ -46,6 +77,14 @@ function HeroSection() {
         <source src="../../public/videos/tunnel.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
+
+      <button onClick={handleToggleSound} className="toggle-sound-button">
+        {isSoundPlaying ? 'Stop Sound' : 'Play Sound'}
+      </button>
+
+      <audio ref={audioRef} loop>
+        <source src="/sounds/gamesound.wav" type="audio/wav" />
+      </audio>
     </div>
   );
 }
