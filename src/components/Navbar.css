@@ -280,7 +280,7 @@ h1:hover {
     position: fixed !important;
     top: 15px;
     margin-top: 15px;
-    z-index: 999;
+    z-index: 99;
   }
   .NavbarItems {
     position: realative;
@@ -358,6 +358,7 @@ h1:hover {
     font-size: 1.8rem;
     cursor: pointer;
     color: white;
+    z-index: 9999;
   }
 
   h1 {
