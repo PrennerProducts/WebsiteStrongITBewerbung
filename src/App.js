@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom';
-import MyNavbar from './components/Navbar';
-import Home from './components/pages/Home';
-import WhoAmI from './components/pages/WhoAmi';
-import './index.css';
-import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
-import Downlaods from './components/pages/Downloads';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+import MyNavbar from "./components/Navbar";
+import Home from "./components/pages/Home";
+import WhoAmI from "./components/pages/WhoAmi";
+import "./index.css";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import Downlaods from "./components/pages/Downloads";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -23,18 +24,18 @@ export default function App() {
             className="spinner"
             style={{
               background:
-                'linear-gradient(90deg, rgba(238, 9, 229, 1) 0%, rgba(139, 9, 238, 1) 48%, rgba(6, 181, 242, 0.9332107843137255) 92%)',
-              height: '100vh',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+                "linear-gradient(90deg, rgba(238, 9, 229, 1) 0%, rgba(139, 9, 238, 1) 48%, rgba(6, 181, 242, 0.9332107843137255) 92%)",
+              height: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <ClimbingBoxLoader
-              color={'#ffffff'}
+              color={"#ffffff"}
               loading={loading}
               size={30}
-              css={{ display: 'block', margin: '0 auto' }}
+              css={{ display: "block", margin: "0 auto" }}
               aria-label="Loading Spinner"
               data-testid="loader"
             />

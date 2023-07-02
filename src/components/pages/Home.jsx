@@ -1,9 +1,9 @@
-import React from 'react';
-import '../../App.css';
-import HeroSection from '../HeroSection';
-import WhoAmI from '../pages/WhoAmi';
-import Downlaods from '../pages/Downloads';
-import './home.css';
+import React from "react";
+import "../../App.css";
+import HeroSection from "../HeroSection";
+import WhoAmI from "../pages/WhoAmi";
+import Downlaods from "../pages/Downloads";
+import "./home.css";
 
 function Home() {
   return (
@@ -14,9 +14,7 @@ function Home() {
       <div className="about-container">
         <WhoAmI />
       </div>
-      <div className="download-container">
-        <Downlaods />
-      </div>
+      {/* <div className="download-container"><Downlaods /></div> */}
     </div>
   );
 }

@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
-import '../App.css';
-import './HeroSection.css';
-import { TypeAnimation } from 'react-type-animation';
+import React, { useState, useEffect, useRef } from "react";
+import "../App.css";
+import "./HeroSection.css";
+import { TypeAnimation } from "react-type-animation";
 
 function HeroSection() {
   const audioRef = useRef(null);
@@ -13,7 +13,7 @@ function HeroSection() {
     const playSound = () => {
       if (audioElement) {
         audioElement.play().catch((error) => {
-          console.log('Failed to play sound:', error);
+          console.log("Failed to play sound:", error);
         });
       }
     };
@@ -41,17 +41,17 @@ function HeroSection() {
         <TypeAnimation
           sequence={[
             1000, // Waits 1s
-            'Welcome to my application page...', // Types 'One'
+            "Welcome to my application page...", // Types 'One'
             2000, // Waits 1s
-            '...get to know me...', // Types 'One'
+            "...get to know me...", // Types 'One'
             2000, // Waits 1s
-            '...lets hit the scroll!', // Types 'One'
+            "...lets hit the scroll!", // Types 'One'
             2000, // Waits 1s
 
             // Waits 2s
-            '', // Types 'Three' without deleting 'Two'
+            "", // Types 'Three' without deleting 'Two'
             () => {
-              console.log('Done typing!'); // Place optional callbacks anywhere in the array
+              console.log("Done typing!"); // Place optional callbacks anywhere in the array
             },
           ]}
           wrapper="div"
@@ -60,13 +60,13 @@ function HeroSection() {
           speed={35}
           deletionSpeed={75}
           style={{
-            top: '250px',
-            fontSize: '5em',
-            paddingLeft: '0px',
-            marginTop: '200px',
-            alignItems: 'center',
-            color: 'white',
-            fontFamily: 'Rowdies',
+            top: "250px",
+            fontSize: "5em",
+            paddingLeft: "0px",
+            marginTop: "200px",
+            alignItems: "center",
+            color: "white",
+            fontFamily: "Rowdies",
           }}
           className="typeAnimation"
         />
@@ -79,7 +79,7 @@ function HeroSection() {
       </video> */}
 
       <button onClick={handleToggleSound} className="toggle-sound-button">
-        {isSoundPlaying ? 'Stop Sound' : 'Play Sound'}
+        {isSoundPlaying ? "Stop Sound" : "Play Sound"}
       </button>
 
       <audio ref={audioRef} loop>

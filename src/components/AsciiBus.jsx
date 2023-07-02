@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const AsciiBus = () => {
   return (
-    <pre>
+    <pre style={{ color: "white" }}>
       {`
        .-------------------------------------------------------------.
       '------..-------------..----------..----------..----------..--.|

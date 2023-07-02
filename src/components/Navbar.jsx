@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./Navbar.css";
 
 export default function MyNavbar() {
   const [click, setClick] = useState(false);
@@ -42,17 +42,17 @@ export default function MyNavbar() {
 
   useEffect(() => {
     showButton();
-    window.addEventListener('resize', showButton);
-    window.addEventListener('scroll', changeNavBackground);
+    window.addEventListener("resize", showButton);
+    window.addEventListener("scroll", changeNavBackground);
     return () => {
-      window.removeEventListener('resize', showButton);
-      window.removeEventListener('scroll', changeNavBackground);
+      window.removeEventListener("resize", showButton);
+      window.removeEventListener("scroll", changeNavBackground);
     };
   }, []);
 
   return (
     <>
-      <nav className={'navbar'}>
+      <nav className="navbar fixed-top">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenue}>
             <img
@@ -61,14 +61,17 @@ export default function MyNavbar() {
               alt="bug"
               height={90}
             />
-            <h1 style={{ marginLeft: '30px' }}> &lt;lukasPrenner&gt; </h1>
+            <h1 style={{ marginLeft: "30px", color: "#15d6eb" }}>
+              {" "}
+              &lt;lukasPrenner&gt;{" "}
+            </h1>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to={'/'} className="nav-links" onClick={closeMobileMenue}>
+              <Link to={"/"} className="nav-links" onClick={closeMobileMenue}>
                 Home
               </Link>
             </li>
