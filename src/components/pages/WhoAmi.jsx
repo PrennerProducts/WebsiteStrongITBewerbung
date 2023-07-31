@@ -25,14 +25,15 @@ function WhoAmI() {
             <div className="right">
               <div className="text-container">
                 <p className="text">
-                  My vision is to leverage digital technology to create a better
-                  world. As a digital business and software engineering student,
-                  I am passionate about solving current problems and driving
-                  digital transformation. With a deep understanding of
-                  technology and its potential, I am committed to making a
-                  positive impact and advancing innovation. Join me on this
-                  exciting journey to shape the future of digital business and
-                  make a difference in the world.
+                  My vision is to leverage digital technology to enhance
+                  cybersecurity and create a safer digital world. As a software
+                  engineering student, I am passionate about addressing modern
+                  security challenges and contributing to the field of IT
+                  security. With a fundamental understanding of technology and
+                  its potential, I am committed to making a positive impact and
+                  advancing innovation. Join me on this exciting journey to
+                  shape the future of IT security and make a difference in the
+                  world.
                 </p>
               </div>
             </div>

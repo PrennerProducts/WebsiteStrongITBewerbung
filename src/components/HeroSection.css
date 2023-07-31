@@ -61,17 +61,19 @@ video {
   bottom: 0;
 }
 
-.toggle-sound-button {
-  font-family: 'Rowdies', sans-serif;
+.check-security-button {
   position: absolute;
-  bottom: 25%;
-  color: rgba(12, 177, 237, 0.933);
-  background-color: #eb05dc;
-  border: 3px solid rgba(139, 9, 238, 1);
+  top: 800px;
+  color: rgba(0, 0, 0, 0.933);
+  background-color: rgb(1, 221, 255);
+  border: 3px solid rgb(0, 0, 0);
   border-radius: 10%;
   padding: 10px 20px;
   font-size: 16px;
+  font-family: 'Rowdies', cursive, Arial, sans-serif;
+  font-weight: bold;
   cursor: pointer;
+  z-index: 999;
 }
 
 @media (max-width: 480px) {

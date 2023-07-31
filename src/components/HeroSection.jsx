@@ -5,34 +5,11 @@ import { TypeAnimation } from 'react-type-animation';
 
 function HeroSection() {
   const audioRef = useRef(null);
-  const [isSoundPlaying, setIsSoundPlaying] = useState(false);
 
-  useEffect(() => {
-    const audioElement = audioRef.current;
-
-    const playSound = () => {
-      if (audioElement) {
-        audioElement.play().catch((error) => {
-          console.log('Failed to play sound:', error);
-        });
-      }
-    };
-
-    const pauseSound = () => {
-      if (audioElement) {
-        audioElement.pause();
-      }
-    };
-
-    if (isSoundPlaying) {
-      playSound();
-    } else {
-      pauseSound();
-    }
-  }, [isSoundPlaying]);
-
-  const handleToggleSound = () => {
-    setIsSoundPlaying((prevState) => !prevState);
+  const handleCheckSecurity = () => {
+    // Füge hier den Link zur anderen Seite ein, auf der du die Vorlage verwenden möchtest
+    const securityCheckUrl = 'https://security.lupre.at';
+    window.open(securityCheckUrl, '_blank');
   };
 
   return (
@@ -73,16 +50,10 @@ function HeroSection() {
       </div>
 
       <video src="/videos/code1.mp4" type="video/mp4" autoPlay muted loop />
-      {/* <video width="320" height="240" controls>
-        <source src="../../public/videos/tunnel.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
 
-      <button onClick={handleToggleSound} className="toggle-sound-button">
-        {isSoundPlaying ? 'Stop Sound' : 'Play Sound'}
+      <button onClick={handleCheckSecurity} className="check-security-button">
+        Check System Security
       </button>
-
-      <button>Security Check</button>
 
       <audio ref={audioRef} loop>
         <source src="/sounds/gamesound.wav" type="audio/wav" />
