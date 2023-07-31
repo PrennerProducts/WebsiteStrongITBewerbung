@@ -43,7 +43,8 @@ function HeroSection() {
             marginTop: '200px',
             alignItems: 'center',
             color: 'white',
-            fontFamily: 'Rowdies',
+            fontFamily: 'Source Code Pro',
+            fontWeight: 700,
           }}
           className="typeAnimation"
         />

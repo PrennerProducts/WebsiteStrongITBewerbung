@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import MyCard from '../MyCard';
 import './Downloads.css';
-import AsciiBus from '../AsciiBus';
+import AsciArt from '../AsciArt';
 
 // import Contact from './Contact';
 // import Gallerie from './Gallerie';
@@ -50,7 +50,7 @@ function Downlaods() {
       </div>
       <div className="downloads"></div>
       <div className="bus">
-        <AsciiBus />
+        <AsciArt />
       </div>
       <div className="row mt-5" style={{ width: '100%', margin: 'auto' }}>
         <div className="col">

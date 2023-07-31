@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AsciiBus = () => {
+const AsciArt = () => {
   return (
     <pre style={{ color: 'white' }}>
       {`
@@ -37,4 +37,4 @@ const AsciiBus = () => {
   );
 };
 
-export default AsciiBus;
+export default AsciArt;
