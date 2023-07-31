@@ -19,20 +19,28 @@ function Downlaods() {
         </div>
         <div className="row">
           <div className="col-sm-6">
-            <a href="/documents/bewerbung.pdf" target="_blank">
+            <a
+              href="/documents/bewerbung.pdf"
+              target="_blank"
+              style={{ textDecoration: 'none' }}
+            >
               <MyCard
-                imageSrc="/images/logo-application.png"
-                title="Open Application"
+                imageSrc="/images/Application.png"
+                title="My Application"
                 description=""
                 listItems={[]}
               />
             </a>
           </div>
           <div className="col-sm-6">
-            <a href="/documents/lebenslauf.pdf" target="_blank">
+            <a
+              href="/documents/lebenslauf.pdf"
+              target="_blank"
+              style={{ textDecoration: 'none' }}
+            >
               <MyCard
-                imageSrc="/images/logo-color.png"
-                title="Open CV"
+                imageSrc="/images/cv.png"
+                title="My CV"
                 description=""
                 listItems={[]}
               />

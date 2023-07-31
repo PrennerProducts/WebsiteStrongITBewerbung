@@ -72,7 +72,7 @@ function HeroSection() {
         />
       </div>
 
-      <video src="/videos/code.mp4" type="video/mp4" autoPlay muted loop />
+      <video src="/videos/code1.mp4" type="video/mp4" autoPlay muted loop />
       {/* <video width="320" height="240" controls>
         <source src="../../public/videos/tunnel.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -81,6 +81,8 @@ function HeroSection() {
       <button onClick={handleToggleSound} className="toggle-sound-button">
         {isSoundPlaying ? 'Stop Sound' : 'Play Sound'}
       </button>
+
+      <button>Security Check</button>
 
       <audio ref={audioRef} loop>
         <source src="/sounds/gamesound.wav" type="audio/wav" />
