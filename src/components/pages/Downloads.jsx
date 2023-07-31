@@ -1,8 +1,8 @@
-import React from "react";
-import "../../App.css";
-import MyCard from "../MyCard";
-import "./Downloads.css";
-import AsciiBus from "../AsciiBus";
+import React from 'react';
+import '../../App.css';
+import MyCard from '../MyCard';
+import './Downloads.css';
+import AsciiBus from '../AsciiBus';
 
 // import Contact from './Contact';
 // import Gallerie from './Gallerie';
@@ -44,28 +44,19 @@ function Downlaods() {
       <div className="bus">
         <AsciiBus />
       </div>
-      <div className="row mt-5" style={{ width: "100%", margin: "auto" }}>
+      <div className="row mt-5" style={{ width: '100%', margin: 'auto' }}>
         <div className="col">
           <p className="goalsfooter">
-            I am excited about the possibilities that lie ahead and grateful for
-            the opportunity to pursue my passion in the gaming industry. I am
-            eager to contribute to the success of your esteemed gaming studio
-            and gain invaluable experience during this internship. Thank you for
-            considering my application, and I look forward to the possibility of
-            working together on exciting gaming projects.
+            I am excited about the opportunities that lie ahead and I am
+            grateful for the chance to pursue my passion in the IT security
+            industry. I am eager to contribute to the success of your esteemed
+            company, Strong-IT, and gain invaluable experience during this
+            internship. Thank you for considering my application, and I look
+            forward to the possibility of working together on crucial IT
+            security projects.
           </p>
         </div>
       </div>
-      {/* <div className="goalscontainer down">
-        <p className="goalsfooter">
-          I am excited about the possibilities that lie ahead and grateful for
-          the opportunity to pursue my passion in the gaming industry. I am
-          eager to contribute to the success of your esteemed gaming studio and
-          gain invaluable experience during this internship. Thank you for
-          considering my application, and I look forward to the possibility of
-          working together on exciting gaming projects.
-        </p>
-      </div> */}
     </div>
   );
 }
