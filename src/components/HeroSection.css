@@ -119,4 +119,9 @@ video {
     font-size: '38px';
     font-weight: 'bold';
   }
+
+  .check-security-button {
+    position: absolute;
+    top: 200px;
+  }
 }

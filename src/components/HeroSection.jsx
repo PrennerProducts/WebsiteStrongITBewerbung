@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import '../App.css';
 import './HeroSection.css';
 import { TypeAnimation } from 'react-type-animation';

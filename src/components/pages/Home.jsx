@@ -1,9 +1,8 @@
-import React from "react";
-import "../../App.css";
-import HeroSection from "../HeroSection";
-import WhoAmI from "../pages/WhoAmi";
-import Downlaods from "../pages/Downloads";
-import "./home.css";
+import React from 'react';
+import '../../App.css';
+import HeroSection from '../HeroSection';
+import WhoAmI from '../pages/WhoAmi';
+import './home.css';
 
 function Home() {
   return (
