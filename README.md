@@ -1,2 +1,2 @@
-# ReactWebsiteStillalive https://bewerbung.lupre.at
+# ReactWebsite Strong-IT https://bewerbung.lupre.at
 
