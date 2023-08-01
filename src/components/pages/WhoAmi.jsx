@@ -17,7 +17,7 @@ function WhoAmI() {
             <div className="left">
               <div className="card bg"> </div>
               <div className="card">
-                <img src="/images/cap.JPG" alt="Portrait" className="img" />{' '}
+                <img src="/images/cap1.JPG" alt="Portrait" className="img" />{' '}
               </div>
             </div>
           </div>
