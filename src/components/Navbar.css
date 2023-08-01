@@ -54,7 +54,7 @@ li {
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(7, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -135,6 +135,7 @@ li {
 .nav-item:hover ul {
   display: flex;
 }
+
 .github-logo {
   transition: color 0.3s ease;
 }
@@ -147,6 +148,17 @@ li {
   background-color: #e5a00ad5;
   filter: invert(1) grayscale(0%) brightness(200%);
   scale: 0.8;
+}
+
+.security-logo {
+  color: rgb(251, 247, 247);
+  z-index: 999999;
+  background-color: white;
+  border-radius: 50%;
+  scale: 0.4;
+}
+.security-logo:hover {
+  background-color: rgba(6, 181, 242, 0.9332107843137255);
 }
 
 .dropdown-menu {

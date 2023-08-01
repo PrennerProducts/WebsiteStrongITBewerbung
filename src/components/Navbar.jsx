@@ -111,7 +111,20 @@ export default function MyNavbar() {
                 </ul>
               )}
             </li>
-
+            <li className="nav-item">
+              <a
+                href="https://security.lupre.at"
+                className="nav-links"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/security.svg"
+                  alt="Security Logo"
+                  className="security-logo"
+                />
+              </a>
+            </li>
             <li className="nav-item">
               <a
                 href="https://github.com/PrennerProducts"
